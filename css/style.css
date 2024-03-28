@@ -156,6 +156,23 @@ header button{
 .btn-primary:hover{
     background-color: #000;
 }
+
+.btn-primary a{
+    display: inline-block;
+    width: fit-content;
+    background-color: #ffd900;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    padding: 7px 15px;
+    text-transform: uppercase;
+    font-family: 'Oswald';
+    transition: .3s;
+}
+.btn-primary a:hover{
+    background-color: #000;
+}
+
 .btn-secondary{
     display: inline-block;
     background-color: transparent;
