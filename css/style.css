@@ -540,6 +540,15 @@ footer .contenido .redes a:hover{
     color: #fff;
 }
 
+footer .transparente {
+    color: transparent;
+}
+
+footer .sub-title {
+    font-size: 15px;
+    font-weight: 100;
+}
+
 /* Responsive design */
 @media screen and (max-width:920px){
     header nav{
