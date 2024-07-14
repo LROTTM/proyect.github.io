@@ -1,229 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsive Personal Portfolio Website Design | Codehal</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/bg.png">
+    <title>U.E Mallasa</title>
+</head>
+<body>
 
-    <!-- box icons -->
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <!-- nav -->
+    
+    <nav class="nav">
 
-    <!-- custom css -->
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
+        <div class="nav__container">
 
-  <body>
-    <!-- header design -->
-    <header class="header">
-        <a href="#" class="logo">Portafolio</a>
+            <h1 class="nav__title">U.E. Mallasa</h1>
 
-        <i class="bx bx-menu" id="menu-icon"></i>
+            <a href="#menu" class="nav__menu">
+                <img src="img/menu.svg" class="nav__icon">
+            </a>
 
-        <nav class="navbar">
-            <a href="" class="active">Home</a>
-            <a href="">About</a>
-            <a href="">Services</a>
-            <a href="">Portafolio</a>
-            <a href="">Contacto</a>
-        </nav>
-    </header>
+            <a href="#" class="nav__menu nav__menu--second">
+                <img src="img/close.svg" class="nav__icon ">
+            </a>
 
-    <!-- home section design -->
+            <ul class="dropdown" id="menu">
 
-    <section class="home" id="home">
-        <div class="home-content">
-            <h3>Hello, Its me</h3>
-            <h1>Jhon Kendrick</h1>
-            <h3>And Im A <span>Frontend developer</span></h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Eligendi sint incidunt, quis nihil enim velit odio, ipsa
-                repellendus porro fugiat sapiente perspiciatis iste assumenda eaque quam. Veritatis quas aperiam quod?
-            </p>
+                <li class="dropdown__list">
+                    <a href="index.html" class="dropdown__link">
+                        <img src="img/house.svg" class="dropdown__icon">
+                        <span class="dropdown__span">Inicio</span>
+                    </a>
+                </li>
 
-            <div class="social-media">
-                <a href="#"><i class="bx bxl-facebook"></i></a>
-                <a href="#"><i class="bx bxl-twitter"></i></a>
-                <a href="#"><i class="bx bxl-instagram-alt"></i></a>
-                <a href="#"><i class="bx bxl-linkedin"></i></a>
-            </div>
-            <a href="" class="btn">Download cv</a>
+                <li class="dropdown__list">
+                    <a href="#" class="dropdown__link">
+                        <img src="img/projects.svg" class="dropdown__icon">
+                        <span class="dropdown__span">Nosotros</span>
+                        <img src="img/down.svg" class="dropdown__arrow">
+
+                        <input type="checkbox" class="dropdown__check">
+                    </a>
+
+                    <div class="dropdown__content">
+
+                        <ul class="dropdown__sub">
+
+                            <li class="dropdown__li">
+                                <a href="#" class="dropdown__anchor">Colegio</a>
+                            </li>
+                            <li class="dropdown__li">
+                                <a href="#" class="dropdown__anchor">Misión y Visión</a>
+                            </li>
+                            <li class="dropdown__li">
+                                <a href="#" class="dropdown__anchor">Personal</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </li>
+
+                <li class="dropdown__list">
+                    <a href="#" class="dropdown__link">
+                        <img src="img/email.svg" class="dropdown__icon">
+                        <span class="dropdown__span">Información</span>
+                        <img src="img/down.svg" class="dropdown__arrow">
+
+                        <input type="checkbox" class="dropdown__check">
+                    </a>
+
+                    <div class="dropdown__content">
+
+                        <ul class="dropdown__sub">
+
+                            <li class="dropdown__li">
+                                <a href="#" class="dropdown__anchor">Noticias</a>
+                            </li>
+                            <li class="dropdown__li">
+                                <a href="#" class="dropdown__anchor">Actividades</a>
+                            </li>
+                            <li class="dropdown__li">
+                                <a href="#" class="dropdown__anchor">Torneos</a>
+                            </li>
+                            <li class="dropdown__li">
+                                <a href="#" class="dropdown__anchor">Calendario académico</a>
+                            </li>
+                            <li class="dropdown__li">
+                                <a href="#" class="dropdown__anchor">Horario</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </li>
+                <li class="dropdown__list">
+                    <a href="#" class="dropdown__link">
+                        <img src="img/school.svg" class="dropdown__icon">
+                        <span class="dropdown__span">Áreas académicas</span>
+                        <img src="img/down.svg" class="dropdown__arrow">
+
+                        <input type="checkbox" class="dropdown__check">
+                    </a>
+
+                    <div class="dropdown__content">
+
+                        <ul class="dropdown__sub">
+
+                            <li class="dropdown__li">
+                                <a href="#" class="dropdown__anchor">Primaria Inferior</a>
+                            </li>
+                            <li class="dropdown__li">
+                                <a href="#" class="dropdown__anchor">Primaria Superior</a>
+                            </li>
+                            <li class="dropdown__li">
+                                <a href="#" class="dropdown__anchor">Secundaria Inferior</a>
+                            </li>
+                            <li class="dropdown__li">
+                                <a href="#" class="dropdown__anchor">Secundaria Superior</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </li>
+                <li class="dropdown__list">
+                    <a href="#" class="dropdown__link">
+                        <img src="img/contact.svg" class="dropdown__icon">
+                        <span class="dropdown__span">Contacto</span>
+                        <img src="img/down.svg" class="dropdown__arrow">
+
+                        <input type="checkbox" class="dropdown__check">
+                    </a>
+
+                    <div class="dropdown__content">
+
+                        <ul class="dropdown__sub">
+
+                            <li class="dropdown__li">
+                                <a href="#" class="dropdown__anchor">Contacto telefónico</a>
+                            </li>
+                            <li class="dropdown__li">
+                                <a href="#" class="dropdown__anchor">Contacto por correo</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </li>
+                <li class="dropdown__list">
+                    <a href="#" class="dropdown__link">
+                        <img src="img/help.svg" class="dropdown__icon">
+                        <span class="dropdown__span">Ayuda</span>
+                    </a>
+                </li>
+
+            </ul>
+
         </div>
 
-        <div class="home-img">
-            <img src="img/pepegansta-removebg.png" alt="">
-        </div>
-    </section>
+    </nav>
 
-    <!-- about section design -->
+    <!-- section -->>
 
-    <section class="about" id="about">
-        <div class="about-img">
-            <img src="img/pepegansta-removebg.png" alt="">
-        </div>
+    <section class="section">
 
-        <div class="about-content">
-            <h2 class="heading">Aboutp <span>Me</span></h2>
-            <h3>Frontend Developer</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem neq
-                ue soluta, numquam commodi vel expedita? Eaque autem, dolores velit
-                dus sed iure nesciunt id suscipit, aliquam nostrum rem incidunt cum.
-            </p>
-            <a href="" class="btn">Read more</a>
-        </div>
-    </section>
+        <div class="section-content">
 
-    <!-- services section design -->
-
-    <section class="services" id="services">
-        <h2 class="heading">Our <span>Services</span></h2>
-
-        <div class="services-container">
-            <div class="services-box">
-                <i class="bx bx-code-alt"></i>
-                <h3>Web Developer</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing e
-                    lit. Quia veritatis iure in inventore placeat, ut, reprehenderit fugit quod nostrum suscipit quis a
-                    tque optio, dolorem voluptates beatae deserunt dignissimos eum odit!
+                <h1 class="section-txt">Bienvenido al nivel  <span class="section-span">Secundario</span>  nivel Inferior</h1>
+                <p class="section-p">
+                    La Unidad Educativa Técnica Humanistica de Mallasa en el nivel Secundaria busca la formación integral de los estudiantes, a través de la excelencia académica con sólidos principios y valores. Ofrecemos a nuestros jóvenes nuevas tecnologías para el desarrollo del aprendizaje significativo en el idioma en Español e Inglés.
                 </p>
-                <a href="#" class="btn">Read More</a>
-            </div>
-
-            <div class="services-box">
-                <i class="bx bxs-paint"></i>
-                <h3>Graphic Designer</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing e
-                    lit. Quia veritatis iure in inventore placeat, ut, reprehenderit fugit quod nostrum suscipit quis a
-                    tque optio, dolorem voluptates beatae deserunt dignissimos eum odit!
+                <p class="inv">.....................................</p>
+                <p class="section-p">
+                    Los convenios del Colegio con Instituciones Internacionales permiten acreditar con Certificación Nacional e Internacional a nuestros estudiantes, quienes desarrollan un verdadero aprendizaje del idioma inglés con metodologías modernas y el avance de contenidos de asignaturas en inglés.  Así mismo con la implementación del BTH se promueven las competencias y habilidades en el uso de sistemas informáticos y el diseño gráfico.                    
                 </p>
-                <a href="#" class="btn">Read More</a>
-            </div>
-
-            <div class="services-box">
-                <i class="bx bx-bar-chart-alt"></i>
-                <h3>Digital Marketing</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing e
-                    lit. Quia veritatis iure in inventore placeat, ut, reprehenderit fugit quod nostrum suscipit quis a
-                    tque optio, dolorem voluptates beatae deserunt dignissimos eum odit!
+                <p class="inv">.....................................</p>
+                <p class="section-p">
+                    Utilizando la metodología de doble escolaridad cumplimos con la Curricular Educativa que está integrada por materias en Español e Inglés, brindamos el apoyo académico en las actividades escolares y realizamos actividades complementarias “workshops” en diferentes disciplinas artísticas, tecnológicas y deportivas.
                 </p>
-                <a href="#" class="btn">Read More</a>
-            </div>
+                <p class="inv">.....................................</p>
+                <p class="section-p">
+                    Contamos con un equipo de profesionales comprometidos con la educación y la visión del Colegio que trabaja con esmero para consolidar un servicio de calidad en el ámbito educativo.
+                </p>
+                <p class="inv">.....................................</p>
+
         </div>
+
+        <div class="img">
+
+            <img src="img/bg.png" alt="">
+
+        </div>
+
+
     </section>
 
-    <!-- portfolio section design -->
+    <!-- objetivos -->>
 
-    <section class="portfolio" id="portfolio">
-        <h2 class="heading">Latest <span>Projects</span></h2>
+    <section class="objetivos">
 
-        <div class="portfolio-container">
-            <div class="portfolio-box">
-                <img src="img/pepegamer.jfif" alt="">
-                <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>
-                        nam ipsam officia doloremque ex inventore maxime quibusdam quidem!
-                    </p>
-                    <a href="#"><i class="bx bx-link-external"></i></a>
-                </div>
-            </div>
+        <div class="content-objetivos">
 
-            <div class="portfolio-box">
-                <img src="img/pepegamer.jfif" alt="">
-                <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>
-                        nam ipsam officia doloremque ex inventore maxime quibusdam quidem!
-                    </p>
-                    <a href="#"><i class="bx bx-link-external"></i></a>
-                </div>
-            </div>
+            <h2 class="title">¿Cuales son nuestros <span class="objetivos-span">objetivos</span>?</h2>
+            <h3 class="subtitle">Nuestros objetivos para el nivel secundario Inferior son:</h3>
 
-            <div class="portfolio-box">
-                <img src="img/pepegamer.jfif" alt="">
-                <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>
-                        nam ipsam officia doloremque ex inventore maxime quibusdam quidem!
-                    </p>
-                    <a href="#"><i class="bx bx-link-external"></i></a>
-                </div>
-            </div>
-
-            <div class="portfolio-box">
-                <img src="img/pepegamer.jfif" alt="">
-                <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>
-                        nam ipsam officia doloremque ex inventore maxime quibusdam quidem!
-                    </p>
-                    <a href="#"><i class="bx bx-link-external"></i></a>
-                </div>
-            </div>
-
-            <div class="portfolio-box">
-                <img src="img/pepegamer.jfif" alt="">
-                <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>
-                        nam ipsam officia doloremque ex inventore maxime quibusdam quidem!
-                    </p>
-                    <a href="#"><i class="bx bx-link-external"></i></a>
-                </div>
-            </div>
-
-            <div class="portfolio-box">
-                <img src="img/pepegamer.jfif" alt="">
-                <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>
-                        nam ipsam officia doloremque ex inventore maxime quibusdam quidem!
-                    </p>
-                    <a href="#"><i class="bx bx-link-external"></i></a>
-                </div>
-            </div>
         </div>
+
+        <div class="conteiner-1">
+
+            <li class="dropdown__list">
+                <h4 href="#" class="dropdown__link">
+                    <img src="img/book.svg" class="dropdown__icon">
+                    <span class="dropdown__span">Desarrolar su capacidad de comprender textos y los mensajes que contienen de manera correcta.</span>
+                </h4>
+            </li>
+            <li class="dropdown__list">
+                <h4 href="#" class="dropdown__link">
+                    <img src="img/brain.svg" class="dropdown__icon">
+                    <span class="dropdown__span">Desarrollar su capacidad de razonamiento lógico.</span>
+                </h4>
+            </li>
+            <li class="dropdown__list">
+                <h4 href="#" class="dropdown__link">
+                    <img src="img/book-heart.svg" class="dropdown__icon">
+                    <span class="dropdown__span">Enseñarles los valores religiosos para que los aplique en su diario vivir.</span>
+                </h4>
+            </li>
+            <li class="dropdown__list">
+                <h4 href="#" class="dropdown__link">
+                    <img src="img/pencil.svg" class="dropdown__icon">
+                    <span class="dropdown__span">Comprensión de los conocimientos teóricos, para ser utilizado en la solución de problemas.</span>
+                </h4>
+            </li>
+            <li class="dropdown__list">
+                <h4 href="#" class="dropdown__link">
+                    <img src="img/atom.svg" class="dropdown__icon">
+                    <span class="dropdown__span">El avance en el conocimiento científico de los fenómenos físicos, químicos y biológicos.</span>
+                </h4>
+            </li>
+
+
+        </div>
+
     </section>
 
-    <!-- contact section design -->
-
-    <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me!</span></h2>
-
-        <form action="#">
-            <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Email Address">
-            </div>
-
-            <div class="input-box">
-                <input type="number" placeholder="Mobile number">
-                <input type="text" placeholder="Email Subject">
-            </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <input type="submit" value="Send Message" class="btn">
-        </form>
-    </section>
-
-    <!-- footer design -->
-
-    <footer class="footer">
-        <div class="footer-text">
-            <p>Copyright &copy; 2023 by Codehal | All Rights  Reserved.</p>
-        </div>
-
-        <div class="footer-iconTop">
-            <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
-        </div>
-    </footer>
-
-    <!-- scroll reveal -->
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-    <!-- typed js -->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
-    <!-- custom js -->
-    <script src="js/main.js"></script>
-  </body>
+</body>
 </html>
