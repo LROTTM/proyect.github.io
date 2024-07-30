@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/colegio.css">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/react/16.11.0/umd/react.development.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.11.0/umd/react-dom.development.js"></script>
+    <script defer src="main-compiled.js"></script>
+    <link rel="icon" href="img/bg.png">
+    <title>U.E Mallasa</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+<body>
+
+    <!-- nav -->
+
+    <nav class="nav">
+
+        <div class="nav__container">
+
+            <h1 class="nav__title">U.E. Mallasa</h1>
+
+            <a href="#menu" class="nav__menu">
+                <img src="img/menu.svg" class="nav__icon">
+            </a>
+
+            <a href="#" class="nav__menu nav__menu--second">
+                <img src="img/close.svg" class="nav__icon ">
+            </a>
+
+            <ul class="dropdown" id="menu">
+
+                <li class="dropdown__list">
+                    <a href="index.html" class="dropdown__link">
+                        <img src="img/house.svg" class="dropdown__icon">
+                        <span class="dropdown__span">Inicio</span>
+                    </a>
+                </li>
+
+                <li class="dropdown__list">
+                    <a href="#" class="dropdown__link">
+                        <img src="img/projects.svg" class="dropdown__icon">
+                        <span class="dropdown__span">Nosotros</span>
+                        <img src="img/down.svg" class="dropdown__arrow">
+
+                        <input type="checkbox" class="dropdown__check">
+                    </a>
+
+                    <div class="dropdown__content">
+
+                        <ul class="dropdown__sub">
+
+                            <li class="dropdown__li">
+                                <a href="colegio.html" class="dropdown__anchor">Colegio</a>
+                            </li>
+                            <li class="dropdown__li">
+                                <a href="mision-vision.html" class="dropdown__anchor">Misión y Visión</a>
+                            </li>
+                            <li class="dropdown__li">
+                                <a href="personal.html" class="dropdown__anchor">Personal</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </li>
+
+                <li class="dropdown__list">
+                    <a href="#" class="dropdown__link">
+                        <img src="img/email.svg" class="dropdown__icon">
+                        <span class="dropdown__span">Información</span>
+                        <img src="img/down.svg" class="dropdown__arrow">
+
+                        <input type="checkbox" class="dropdown__check">
+                    </a>
+
+                    <div class="dropdown__content">
+
+                        <ul class="dropdown__sub">
+
+                            <li class="dropdown__li">
+                                <a href="#" class="dropdown__anchor">Noticias</a>
+                            </li>
+                            <li class="dropdown__li">
+                                <a href="#" class="dropdown__anchor">Actividades</a>
+                            </li>
+                            <li class="dropdown__li">
+                                <a href="#" class="dropdown__anchor">Torneos</a>
+                            </li>
+                            <li class="dropdown__li">
+                                <a href="#" class="dropdown__anchor">Calendario académico</a>
+                            </li>
+                            <li class="dropdown__li">
+                                <a href="#" class="dropdown__anchor">Horario</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </li>
+                <li class="dropdown__list">
+                    <a href="#" class="dropdown__link">
+                        <img src="img/school.svg" class="dropdown__icon">
+                        <span class="dropdown__span">Áreas académicas</span>
+                        <img src="img/down.svg" class="dropdown__arrow">
+
+                        <input type="checkbox" class="dropdown__check">
+                    </a>
+
+                    <div class="dropdown__content">
+
+                        <ul class="dropdown__sub">
+                            
+                            <li class="dropdown__li">
+                                <a href="primaria.html" class="dropdown__anchor">Primaria</a>
+                            </li>
+                            <li class="dropdown__li">
+                                <a href="secundaria.html" class="dropdown__anchor">Secundaria</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </li>
+                <li class="dropdown__list">
+                    <a href="#" class="dropdown__link">
+                        <img src="img/contact.svg" class="dropdown__icon">
+                        <span class="dropdown__span">Contacto</span>
+                        <img src="img/down.svg" class="dropdown__arrow">
+
+                        <input type="checkbox" class="dropdown__check">
+                    </a>
+
+                    <div class="dropdown__content">
+
+                        <ul class="dropdown__sub">
+
+                            <li class="dropdown__li">
+                                <a href="#" class="dropdown__anchor">Contacto telefónico</a>
+                            </li>
+                            <li class="dropdown__li">
+                                <a href="#" class="dropdown__anchor">Contacto por correo</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </li>
+                <li class="dropdown__list">
+                    <a href="#" class="dropdown__link">
+                        <img src="img/help.svg" class="dropdown__icon">
+                        <span class="dropdown__span">Ayuda</span>
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </nav>
+
+    <!-- story -->
+
+    <section class="story">
+
+        <div class="story-container">
+
+            <h3>Conoce la <span class="resalt">Historia</span> de nuestro colegio.</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus sint distinctio hic eaque repellat, voluptatum deleniti cum aspernatur illo, voluptatem delectus ipsam cumque facilis, nostrum dolorum fuga possimus dicta ea.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quo delectus architecto veniam quisquam nostrum quis fugit ea maxime at. Cum soluta culpa recusandae eius sint asperioresi minus. Neque commodi dolorum aspernatur pariatur doloremque nihil molestiae excepturi eos, nobis sit a reiciendis illo  vitae ut vel.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus totam nostrum quod blanditiis culpa laborum. Voluptas, obcaecati illo quia vitae facilis illum perspiciatis mollitia laudantium! Enim perspiciatis rem neque voluptatibus Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio sunt delectus ullam animi minus. Neque commodi dolorum aspernatur pariatur doloremque nihil molestiae excepturi eos, nobis sit a reiciendis illo et.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="objets">
+
+        <div class="objets-txt">
+
+            <h3>Estos son los <span class="resalt">Objetivos</span> de nuestra Unidad Educativa</h3>
+
+        </div>
+
+        <article class="todo">
+
+            <div class="llamadj">
+    
+                <img src="img/book-heart.svg" alt="" class="svg">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad vel voluptates saepe consectetur maiores? Dolor at, reprehenderit blanditiis ex laborum eius et perspiciatis, quo vero maiores atque, quas voluptas libero!</p>
+    
+            </div>
+
+            <div class="rey">
+    
+                <img src="img/atom.svg" alt="" class="svg">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint tenetur quod atque necessitatibus consectetur eligendi neque incidunt deserunt voluptatibus architecto, soluta aliquid quibusdam quia sed at odit </p>
+    
+            </div>
+            <div class="llamadj">
+    
+                <img src="img/book.svg" alt="" class="svg">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ducimus ab aspernatur accusamus qaperiam, veniam sequi nobis adipisci molestiae tenetur non praesentium distinctio voluptates rerum, sit labore cum!</p>
+
+            </div>
+            
+        </article>
+
+        <article class="todo">
+
+            <div class="llamadj">
+    
+                <img src="img/book-heart.svg" alt="" class="svg">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora rem corporis eum atque similique, at, eaque voluptates distinctio sapiente, aliquid iste voluptate inventore laudantium est sint adipisci. Minima, delectus veritatis?</p>
+    
+            </div>
+    
+            <div class="rey">
+    
+                <img src="img/atom.svg" alt="" class="svg">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis ipsum perferendis optio possimus sit vel illo esse doloribus rerum hic temporibus sunt cum veritatis tempore, nobis iste, sint placeat ratione!</p>
+    
+            </div>
+            <div class="llamadj">
+    
+                <img src="img/book.svg" alt="" class="svg">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, odio! Omnis itaque consequatur iure velit, suscipit id quasi quisquam sed minima molestias? Nostrum eum rerum adipisci consequatur ex inventore ea.</p>
+
+            </div>
+            
+        </article>
+
+    </section>
+
+    <section class="rule">
+
+        <div class="rule-txt">
+
+            <h3>Este es el <span class="resalt">Reglamento</span> de nuestra Unidad Educativa</h3>
+
+        </div>
+
+        <div class="rule-list">
+
+            <ul>
+                <h4>Del <span>Estudiante</span></h4>
+                <li>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad facilis sed eius quod magnam consectetur
+                </li>
+                <li>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis iure suscipit dolore placeat 
+                </li>
+                <li>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam fugiat mollitia ea nam eveniet et 
+                </li>
+                <li>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, eligendi? Dignissimos et soluta totam eius 
+                </li>
+                <li>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos temporibus quam perspiciatis ipsum maiores 
+                </li>
+                <li>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel, dignissimos? Deserunt facere nobis fugit
+                </li>
+                <li>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit delectus quos temporibus earum odio 
+                </li>
+            </ul>
+            <ul>
+                <h4>De los <span>Profesores</span></h4>
+                <li>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat voluptates beatae ab necessitatibus 
+                </li>
+                <li>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime accusantium porro dicta ut laborum odit 
+                </li>
+                <li>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia ipsa, nisi eligendi obcaecati atque
+                </li>
+                <li>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore deserunt ad mollitia officiis. Architecto
+                </li>
+                <li>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum porro iure temporibus, perspiciatis mollitia
+                </li>
+                <li>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus veniam quae voluptatum cumque 
+                </li>
+                <li>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, dolores placeat. Laboriosam quidem aliquid 
+                </li>
+            </ul>
+            <ul>
+                <h4>De la <span>Unidad Educativa</span></h4>
+                <li>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis repellat reprehenderit officia quia 
+                </li>
+                <li>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus culpa ab eligendi dolores ipsa, 
+                </li>
+                <li>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed possimus, temporibus cumque cum autem 
+                </li>
+                <li>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat non totam illo saepe vel magnam ducimus 
+                </li>
+                <li>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quis saepe repellendus iste voluptatum!
+                </li>
+                <li>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam impedit, nemo odit voluptatem 
+                </li>
+                <li>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, exercitationem nihil ipsam iusto quod
+                </li>
+            </ul>
+            <ul>
+                <h4>Del <span>Uniforme</span></h4>
+                <li>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, suscipit. Odit vero magnam obcaecati neque 
+                </li>
+                <li>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium harum est molestiae? Doloribus quod
+                </li>
+                <li>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa impedit quae minus ipsa unde eveniet nihil vel 
+                </li>
+                <li>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium ab possimus iusto officiis aspernatur 
+                </li>
+                <li>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate, asperiores. Numquam odit eos 
+                </li>
+                <li>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur, dolorem? Corrupti eveniet 
+                </li>
+                <li>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias voluptate minima a tempore quam omnis 
+                </li>
+            </ul>
+
+        </div>
+
+    </section>
+
+    <!-- slider -->
+
+    <!--
+
+1. useReducer
+2. offset
+3. tilt
+
+-->
+
+<div id="app"></div>
+
+<a href="https://youtu.be/5ptXXNjuUfg" target="_blank" data-keyframers-credit style="color: #FFF"></a>
+
+<script src="https://codepen.io/shshaw/pen/QmZYMG.js"></script>
+<script src="js/colegio.js"></script>
+    
+</body>
+</html>
