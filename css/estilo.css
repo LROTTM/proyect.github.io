@@ -14,58 +14,170 @@ body{
     font-family: 'Krub';
 }
 
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    background-color: #1d1d1d;
+    width: 12px;
+    border-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(transparent, #30ff00);
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(transparent, #00c6ff);
+}
+
+/* nav */
+
+.nav{
+    background-color: #90EE90;
+    --img1: scale(1);
+    --img2: scale(0);
+}
+
+.nav:has( .dropdown:target ){
+    --img1: scale(0);
+    --img2: scale(1);
+    --clip: inset(0 0 0 0);
+}
+
+.nav__container{
+    width: 90%;
+    margin: 0 auto;
+    height: 70px;
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-template-areas: "title img";
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.nav__title{
+    color: #ffffff;
+    grid-area: title;
+}
+
+.nav__menu{
+    grid-area: img;
+    position: relative;
+    z-index: 1001;
+    transform: var(--img1);
+}
+
+.nav__menu--second{
+    transform: var(--img2);
+}
+
+.nav__icon{
+    width: 30px;
+    display: block;
+}
+
+.dropdown{
+    position: absolute;
+    background-color: #000000;
+    width: 75%;
+    max-width: 300px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 1em;
+    display: grid;
+    align-content: center;
+    gap: 1rem;
+    overflow-y: auto;
+    clip-path: var(--clip, inset(0 0 100% 100%));
+    transition: clip-path .5s;
+    z-index: 10;
+    -webkit-transition: clip-path .5s;
+    -moz-transition: clip-path .5s;
+    -ms-transition: clip-path .5s;
+    -o-transition: clip-path .5s;
+}
+
+.dropdown__list{
+    list-style: none;
+}
+
+.dropdown__link{
+    color: rgb(184, 187, 191);
+    padding: 1em .7em;
+    text-decoration: none;
+    
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+
+    position: relative;
+    background-color: var(--bg, transparent);
+    border-radius: 6px;
+}
+
+.dropdown__list:has( :checked ){
+    --rows: 1fr;
+    --rotate: rotate(180deg);
+    --bg: #28303B;
+}
+
+.dropdown__check{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.dropdown__arrow{
+    margin-left: auto;
+    transform: var(--rotate, 0);
+    transition: .2s transform;
+}
+
+.dropdown__content{
+    display: grid;
+    grid-template-rows: var(--rows, 0fr);
+    transition: .3s grid-template-rows;
+}
+
+.dropdown__sub{
+    overflow: hidden;
+
+}
+
+.dropdown__li{
+    width: 85%;
+    list-style: none;
+    margin-left: auto;
+}
+
+.dropdown__anchor{
+    padding: 1em 0;
+    display: block;
+    color: #B6BABE;
+    text-decoration: none;
+}
+
 /* relleno */
 .relleno {
     color: rgba(0, 0, 0, 0);
     background-color: #02a10200;
 }
 
-/* header */
-header{
-    max-width: 1100px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 10px;
-    font-family: 'Oswald';
+/* inv */
+.inv {
+    color: transparent;
 }
-header h1{
-    font-size: 18px;
-    display: flex;
-    align-items: center;
-}
-header h1 .cuadro{
-    display: block;
-    width: 15px;
-    height: 15px;
-    background-color: #fff;
-    margin-right: 10px;
-}
-header nav ul{
-    display: flex;
-    list-style: none;
-}
-header nav ul li{
-    padding: 10px 0;
-    border-bottom: 3px solid transparent;
-    margin: 0 30px;
-}
-header nav ul li a{
-    text-decoration: none;
-    font-size: 17px;
-    color: #fff;
-    text-transform: uppercase;
-}
-header nav ul li:hover{
-    border-bottom: 3px solid #fff;
-}
-header button{
-    border: none;
-    padding: 3px 10px;
-    text-transform: uppercase;
-    cursor: pointer; 
-}
+
 /* sección inicio */
 .contenido{
     max-width: 1100px;
@@ -135,13 +247,12 @@ header button{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 30px;
+    padding-right: 30px;
     font-family: 'Krub';
 }
 #inicio .contenido .fila .derecha h3{
     font-size: 20px;
     margin-bottom: 20px;
-    
 }
 #inicio .contenido .fila .derecha p{
     font-size: 14px;
@@ -177,9 +288,10 @@ header button{
 
 /* sección sobre mi */
 #sobremi{
-    padding: 50px 10px;
+    padding: 30px 10px;
     height: 90vh;
 }
+
 #sobremi .contenido .fila{
     display: flex;
     align-items: center;
@@ -200,8 +312,8 @@ header button{
     font-weight: normal;
 }
 #sobremi .contenido .fila .col > p{
-    font-size: 14px;
-    width: 350px;
+    font-size: 20px;
+    width: 550px;
     margin-bottom: 30px;
     font-weight: bold;
 }
@@ -230,11 +342,13 @@ header button{
 }
 #sobremi .contenido .fila .col .barra-skill span{
     display: inline-block;
-    font-size: 10px;
+    font-size: 12px;
     position: relative;
     text-align: center;
     bottom: 5px;
     width: 100%;
+    color: #000000;
+    font-weight: 800;
 }
 .progreso{
     background-color: #90EE90;
@@ -300,7 +414,10 @@ header button{
 
 /* sección proyectos */
 #proyectos{
-    padding: 50px 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: -200px;
+    padding-bottom: 10px;
 }
 #proyectos .contenido .fila{
     display: flex;
@@ -542,24 +659,26 @@ footer .contenido .redes a:hover{
     color: #fff;
 }
 
+.copy {
+    background-color: #00000000;
+    display: flex;
+    padding-top: 35px;
+    padding-left: 10px;
+}
+
+.copy .copy-txt {
+    font-size: 16px;
+    font-weight: 200;
+    padding-right: 310px;
+}
+
+.copy .copy-p {
+    font-size: 16px;
+    font-weight: 200;
+}
+
 /* Responsive design */
 @media screen and (max-width:920px){
-    header nav{
-        display: none;
-    }
-    header nav.responsive{
-        display: block;
-        position: absolute;
-        right: 10px;
-        top: 55px;
-        background-color:#1d1d1d;
-        border: 1px solid #555555;
-        z-index: 10;
-    }
-    header nav.responsive ul{
-        display: block;
-        
-    }
     #inicio .contenido .fila{
         display: block;
     }
@@ -672,5 +791,30 @@ footer .contenido .redes a:hover{
     }
     footer .contenido .redes{
         justify-content: center;
+    }
+    
+    .copy {
+        background-color: #1d1d1d00;
+        display: inline-block;
+        padding-top: 35px;
+    }
+    
+    .copy .copy-txt {
+        font-size: 16px;
+        font-weight: 200;
+        text-align: center;
+        padding: 0px ;
+        align-items: center;
+        justify-content: center;
+        padding-left: 50px;
+    }
+    
+    .copy .copy-p {
+        padding-top: 10px;
+        font-size: 16px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        padding-left: 50px;
     }
 }
