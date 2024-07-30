@@ -5,30 +5,158 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/estilo.css">
-    <title>Mallasa</title>
+    <link rel="icon" href="img/bg.png">
+    <title>U.E Mallasa</title>
 </head>
 <body>
-    <!-- encabezado -->
-    <header>
-        <h1><span class="cuadro"></span>U.E.T.H.</h1>
-        <nav class="" id="nav">
-            <ul>
-                <li>
-                    <a href="#inicio" onclick="abrirCerrarMenu()">Inicio</a>
+    
+    <!-- nav -->
+    
+    <nav class="nav">
+
+        <div class="nav__container">
+
+            <h1 class="nav__title">U.E. Mallasa</h1>
+
+            <a href="#menu" class="nav__menu">
+                <img src="img/menu.svg" class="nav__icon">
+            </a>
+
+            <a href="#" class="nav__menu nav__menu--second">
+                <img src="img/close.svg" class="nav__icon ">
+            </a>
+
+            <ul class="dropdown" id="menu">
+
+                <li class="dropdown__list">
+                    <a href="index.html" class="dropdown__link">
+                        <img src="img/house.svg" class="dropdown__icon">
+                        <span class="dropdown__span">Inicio</span>
+                    </a>
                 </li>
-                <li>
-                    <a href="#proyectos" onclick="abrirCerrarMenu()">Profesores</a>
+
+                <li class="dropdown__list">
+                    <a href="#" class="dropdown__link">
+                        <img src="img/projects.svg" class="dropdown__icon">
+                        <span class="dropdown__span">Nosotros</span>
+                        <img src="img/down.svg" class="dropdown__arrow">
+
+                        <input type="checkbox" class="dropdown__check">
+                    </a>
+
+                    <div class="dropdown__content">
+
+                        <ul class="dropdown__sub">
+
+                            <li class="dropdown__li">
+                                <a href="colegio.html" class="dropdown__anchor">Colegio</a>
+                            </li>
+                            <li class="dropdown__li">
+                                <a href="mision-vision.html" class="dropdown__anchor">Misión y Visión</a>
+                            </li>
+                            <li class="dropdown__li">
+                                <a href="personal.html" class="dropdown__anchor">Personal</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
                 </li>
-                <li>
-                    <a href="#clientes" onclick="abrirCerrarMenu()">Avances</a>
+
+                <li class="dropdown__list">
+                    <a href="#" class="dropdown__link">
+                        <img src="img/email.svg" class="dropdown__icon">
+                        <span class="dropdown__span">Información</span>
+                        <img src="img/down.svg" class="dropdown__arrow">
+
+                        <input type="checkbox" class="dropdown__check">
+                    </a>
+
+                    <div class="dropdown__content">
+
+                        <ul class="dropdown__sub">
+
+                            <li class="dropdown__li">
+                                <a href="#" class="dropdown__anchor">Noticias</a>
+                            </li>
+                            <li class="dropdown__li">
+                                <a href="#" class="dropdown__anchor">Actividades</a>
+                            </li>
+                            <li class="dropdown__li">
+                                <a href="#" class="dropdown__anchor">Torneos</a>
+                            </li>
+                            <li class="dropdown__li">
+                                <a href="#" class="dropdown__anchor">Calendario académico</a>
+                            </li>
+                            <li class="dropdown__li">
+                                <a href="#" class="dropdown__anchor">Horario</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
                 </li>
-                <li>
-                    <a href="#contacto" onclick="abrirCerrarMenu()">Contacto</a>
+                <li class="dropdown__list">
+                    <a href="#" class="dropdown__link">
+                        <img src="img/school.svg" class="dropdown__icon">
+                        <span class="dropdown__span">Áreas académicas</span>
+                        <img src="img/down.svg" class="dropdown__arrow">
+
+                        <input type="checkbox" class="dropdown__check">
+                    </a>
+
+                    <div class="dropdown__content">
+
+                        <ul class="dropdown__sub">
+                            
+                            <li class="dropdown__li">
+                                <a href="#" class="dropdown__anchor">Primaria</a>
+                            </li>
+                            <li class="dropdown__li">
+                                <a href="secundaria.html" class="dropdown__anchor">Secundaria</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
                 </li>
+                <li class="dropdown__list">
+                    <a href="#" class="dropdown__link">
+                        <img src="img/contact.svg" class="dropdown__icon">
+                        <span class="dropdown__span">Contacto</span>
+                        <img src="img/down.svg" class="dropdown__arrow">
+
+                        <input type="checkbox" class="dropdown__check">
+                    </a>
+
+                    <div class="dropdown__content">
+
+                        <ul class="dropdown__sub">
+
+                            <li class="dropdown__li">
+                                <a href="#" class="dropdown__anchor">Contacto telefónico</a>
+                            </li>
+                            <li class="dropdown__li">
+                                <a href="#" class="dropdown__anchor">Contacto por correo</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </li>
+                <li class="dropdown__list">
+                    <a href="#" class="dropdown__link">
+                        <img src="img/help.svg" class="dropdown__icon">
+                        <span class="dropdown__span">Ayuda</span>
+                    </a>
+                </li>
+
             </ul>
-        </nav>
-        <button onclick="abrirCerrarMenu()"><i class="fa-solid fa-bars"></i></button>
-    </header>
+
+        </div>
+
+    </nav>
+
     <!-- sección inicio -->
     <section id="inicio">
         <div class="contenido">
@@ -49,13 +177,32 @@
                     <img src="img/pepegansta-removebg.png" alt="" class="anim2">
                 </div>
                 <div class="col derecha">
+                    
                     <h3>Un colegio con educación de Calidad</h3>
                     <p> Un colegio donde podras aprender de una mejor manera y con con una mejor comprensión de los temas.</p>
                     <div class="botones">
                         <a class="btn-primary" href="secundaria.html">Secundaria</a>
-                        <a class="btn-secondary">Primaria</a>
+                        <a class="btn-secondary" href="primaria.html">Primaria</a>
                     </div>
                     
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- sección sobre mi -->
+
+    <section id="sobremi">
+        <div class="contenido">
+            <div class="fila">
+                <div class="col">
+                    <h2 class="titulo-seccion">Sobre <span class="resaltado">nosotros</span></h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum distinctio sunt rem! Voluptatum perferendis libero nulla repellat, esse harum.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum distinctio sunt rem! Voluptatum perferendis libero nulla repellat, esse harum.</p>
+                </div>
+                <div class="col">
+                    <div class="circulo-principal"></div>
+                    <img src="img/bg.png" alt="">
                 </div>
             </div>
         </div>
@@ -65,100 +212,74 @@
 
     <section id="proyectos">
         <div class="contenido">
-            <h2 class="titulo-seccion">Info de los <span class="resaltado">Profesores</span> de Secundaria</h2>
+            <h2 class="titulo-seccion">Personal <span class="resaltado">Pincipal</span> de la Unidad Educativa</h2>
             <div class="fila">
                 <div class="col">
-                    <div class="numero-curso">
-                        .01
-                    </div>
+                    
                     <h3 class="titulo-curso">
-                        Matemáticas <span class="resaltado">01</span>
+                        Director <span class="resaltado"></span>
                     </h3>
                     <hr>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio, porro sequi dolor adipisci illum necessitatibus ratione.</p>
-                    <button class="btn-primary">LEER MÁS</button>
+                    <button class="btn-primary">Contactar</button>
                 </div>
                 <div class="col">
-                    <div class="numero-curso">
-                        .02
-                    </div>
+                    
                     <h3 class="titulo-curso">
-                        Computación <span class="resaltado">02</span>
+                        Secretario <span class="resaltado"></span>
                     </h3>
                     <hr>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio, porro sequi dolor adipisci illum necessitatibus ratione.</p>
-                    <button class="btn-primary">LEER MÁS</button>
+                    <button class="btn-primary">Contactar</button>
                 </div>
                 <div class="col">
-                    <div class="numero-curso">
-                        .03
-                    </div>
+                    
                     <h3 class="titulo-curso">
-                        Lenguaje y literatura <span class="resaltado">03</span>
+                        Regente <span class="resaltado">01</span>
                     </h3>
                     <hr>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio, porro sequi dolor adipisci illum necessitatibus ratione.</p>
-                    <button class="btn-primary">LEER MÁS</button>
+                    <button class="btn-primary">Contactar</button>
                 </div>
                 <div class="col">
-                    <div class="numero-curso">
-                        .04
-                    </div>
+                    
                     <h3 class="titulo-curso">
-                        Religión <span class="resaltado">04</span>
+                        Regente <span class="resaltado">02</span>
                     </h3>
                     <hr>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio, porro sequi dolor adipisci illum necessitatibus ratione.</p>
-                    <button class="btn-primary">LEER MÁS</button>
+                    <button class="btn-primary">Contactar</button>
                 </div>
 
             </div>
+        </div>
+    </section>
+
+    <!-- numeros -->
+    <section id="numeros">
+        <div class="contenido">
             <div class="fila">
                 <div class="col">
-                    <div class="numero-curso">
-                        .05
+                    <span class="mas">+</span>
+                    <div class="num" id="contProyectos">0</div>
+                    <div class="texto">
+                        <strong><span class="inv">--</span>Alumnos</strong> 
                     </div>
-                    <h3 class="titulo-curso">
-                        Física <span class="resaltado">05</span>
-                    </h3>
-                    <hr>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio, porro sequi dolor adipisci illum necessitatibus ratione.</p>
-                    <button class="btn-primary">LEER MÁS</button>
                 </div>
                 <div class="col">
-                    <div class="numero-curso">
-                        .06
+                    <span class="mas">+</span>
+                    <div class="num" id="contClientes">0</div>
+                    <div class="texto">
+                        <strong>Profesores de</strong> <br>Primaria
                     </div>
-                    <h3 class="titulo-curso">
-                        Química <span class="resaltado">06</span>
-                    </h3>
-                    <hr>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio, porro sequi dolor adipisci illum necessitatibus ratione.</p>
-                    <button class="btn-primary">LEER MÁS</button>
                 </div>
                 <div class="col">
-                    <div class="numero-curso">
-                        .07
+                    <span class="mas">+</span>
+                    <div class="num" id="contCursos">0</div>
+                    <div class="texto">
+                        <strong>Profesores de</strong> <br>Secundaria
                     </div>
-                    <h3 class="titulo-curso">
-                        Artes Plásticas <span class="resaltado">07</span>
-                    </h3>
-                    <hr>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio, porro sequi dolor adipisci illum necessitatibus ratione.</p>
-                    <button class="btn-primary">LEER MÁS</button>
                 </div>
-                <div class="col">
-                    <div class="numero-curso">
-                        .08
-                    </div>
-                    <h3 class="titulo-curso">
-                        E. Física <span class="resaltado">08</span>
-                    </h3>
-                    <hr>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio, porro sequi dolor adipisci illum necessitatibus ratione.</p>
-                    <button class="btn-primary">LEER MÁS</button>
-                </div>
-
             </div>
         </div>
     </section>
@@ -175,20 +296,35 @@
                 <div class="col col-historia">
                     <h2 class="titulo-seccion">Avances de la<br> <span class="resaltado subir"> materia en...</span></h2>
                     <div class="cliente">
-                        <img src="img/pepemayor-removebg.png" alt="">
+                        <img src="img/pepegansta-removebg.png" alt="">
                         <div class="info-cliente">
                             <h3>Sec. Superior</h3>
                             <div class="estrellas">
-                                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum distinctio sunt rem! Voluptatum perferendis libero nulla repellat, esse harum.</p>
+                                <p class="inv">.....................................</p>
+                                <p>Programación en Arduino.</p>
+                                <p class="inv">.....................................</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cliente">
+                        <img src="img/pepemayor-removebg.png" alt="">
+                        <div class="info-cliente">
+                            <h3>Sec. Inferior.</h3>
+                            <div class="estrellas">
+                                <p class="inv">.....................................</p>
+                                <p>Arduino.</p> 
+                                <p class="inv">.....................................</p>
                             </div>
                         </div>
                     </div>
                     <div class="cliente">
                         <img src="img/pepeadolescente-removebg.png" alt="">
                         <div class="info-cliente">
-                            <h3>Sec. Inferior.</h3>
+                            <h3>Primaria</h3>
                             <div class="estrellas">
-                                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum distinctio sunt rem! Voluptatum perferendis libero nulla repellat, esse harum.</p>
+                                <p class="inv">.....................................</p>
+                                <p>Exel, Word, PowerPoint.</p>
+                                <p class="inv">.....................................</p>
                             </div>
                         </div>
                     </div>
@@ -197,7 +333,9 @@
                         <div class="info-cliente">
                             <h3>Primaria</h3>
                             <div class="estrellas">
-                                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum distinctio sunt rem! Voluptatum perferendis libero nulla repellat, esse harum.</p>
+                                <p class="inv">.....................................</p>
+                                <p>Paint.</p>
+                                <p class="inv">.....................................</p>
                             </div>
                         </div>
                     </div>
@@ -255,6 +393,14 @@
                     <a href="#"><i class="fa-brands fa-youtube"></i></a>
                 </div>
             </div>
+        </div>
+        <div class="copy">
+            <h5 class="copy-txt">
+                &copy; La U.E.T.H. Mallasa - 2024. Todos los Derechos Reservados.
+           </h5>
+           <p class="copy-p">
+                Esta página fue creada por un estudiante de nuestra Unidad Educativa
+           </p>
         </div>
     </footer>
     
