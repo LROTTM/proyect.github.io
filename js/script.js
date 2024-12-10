@@ -16,7 +16,7 @@ function animacionNumeros(){
 
 function actualizarContador() {
     // Verificamos si hemos llegado a 50
-    if (proyectos <= 50) {
+    if (proyectos <= 360) {
         // Mostramos el valor actual del contador en el elemento con id "contador"
         document.getElementById("contProyectos").textContent = proyectos;
         // Incrementamos el contador en 1
@@ -26,7 +26,7 @@ function actualizarContador() {
         clearInterval(intervalProyectos);
     }
     // Verificamos si hemos llegado a 30
-    if (clientes <= 30) {
+    if (clientes <= 23) {
         // Mostramos el valor actual del contador en el elemento con id "contador"
         document.getElementById("contClientes").textContent = clientes;
         // Incrementamos el contador en 1
@@ -36,7 +36,7 @@ function actualizarContador() {
         clearInterval(intervalclientes);
     }
     // Verificamos si hemos llegado a 40
-    if (cursos <= 40) {
+    if (cursos <= 37) {
         // Mostramos el valor actual del contador en el elemento con id "contador"
         document.getElementById("contCursos").textContent = cursos;
         // Incrementamos el contador en 1
@@ -73,3 +73,9 @@ function animacionesSkills(){
         document.getElementById("md").className = " progreso md";
     }
 }
+
+/* share */
+
+jQuery(".sticky_share_btn").click(function () {
+    jQuery(".listing").fadeToggle(600);
+  });
